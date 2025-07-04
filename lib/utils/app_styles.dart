@@ -27,4 +27,14 @@ class AppStyles {
     color: Colors.white,
     fontWeight: FontWeight.bold,
   );
+  static TextStyle bold20Primary = GoogleFonts.aBeeZee(
+    fontSize: 20,
+    color: Color(0xffE2BE7F),
+    fontWeight: FontWeight.bold,
+  );
+  static TextStyle bold24Primary = GoogleFonts.aBeeZee(
+    fontSize: 24,
+    color: Color(0xffE2BE7F),
+    fontWeight: FontWeight.bold,
+  );
 }
