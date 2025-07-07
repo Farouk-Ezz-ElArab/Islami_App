@@ -3,6 +3,9 @@ import 'package:flutter/services.dart';
 import 'package:islami_app/ui/home/tabs/quran_tab/details1/sura_content_screen1.dart';
 import 'package:islami_app/ui/home/tabs/quran_tab/quran_resources.dart';
 import 'package:islami_app/utils/app_styles.dart';
+import 'package:provider/provider.dart';
+
+import '../../../../../providers/most_recent_provider.dart';
 
 class SuraDetailsScreen1 extends StatefulWidget {
   static const String name = 'sura_details_screen1';
@@ -13,11 +16,19 @@ class SuraDetailsScreen1 extends StatefulWidget {
 
 class _SuraDetailsScreenState extends State<SuraDetailsScreen1> {
   List<String> verses = [];
+  late MostRecentProvider mostRecentProvider;
+
+  @override
+  void dispose() {
+    super.dispose();
+    mostRecentProvider.readLastSuraList();
+  }
 
   @override
   Widget build(BuildContext context) {
     int index = ModalRoute.of(context)?.settings.arguments as int;
     var screenSize = MediaQuery.of(context).size;
+    mostRecentProvider = Provider.of<MostRecentProvider>(context);
     if (verses.isEmpty) {
       loadSuraFile(index);
     }
