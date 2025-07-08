@@ -42,4 +42,9 @@ class AppStyles {
     color: Colors.black,
     fontWeight: FontWeight.bold,
   );
+  static TextStyle bold36White = GoogleFonts.aBeeZee(
+    fontSize: 36,
+    color: Colors.white,
+    fontWeight: FontWeight.bold,
+  );
 }

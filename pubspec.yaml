@@ -41,6 +41,7 @@ dependencies:
   shared_preferences: ^2.5.3
   provider: ^6.1.5
   carousel_slider: ^5.1.1
+  flutter_animate: ^4.5.2
 
 
 
