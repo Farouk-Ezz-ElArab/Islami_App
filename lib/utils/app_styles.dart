@@ -37,4 +37,9 @@ class AppStyles {
     color: Color(0xffE2BE7F),
     fontWeight: FontWeight.bold,
   );
+  static TextStyle bold16Black = GoogleFonts.aBeeZee(
+    fontSize: 16,
+    color: Colors.black,
+    fontWeight: FontWeight.bold,
+  );
 }

@@ -40,6 +40,7 @@ dependencies:
   flutter_svg: ^2.2.0
   shared_preferences: ^2.5.3
   provider: ^6.1.5
+  carousel_slider: ^5.1.1
 
 
 
@@ -62,6 +63,7 @@ flutter:
   assets:
     - assets/images/
     - assets/files/suras/
+    - assets/files/hadith/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
